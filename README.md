@@ -1,3 +1,5 @@
+## Usefull commands to use later
+
 ### npm install -D @nuxtjs/tailwindcss
 -D as it is dev dependency and will install tailwindcss
 
