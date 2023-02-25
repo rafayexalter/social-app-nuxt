@@ -13,7 +13,7 @@
         <textarea
           v-model="text"
           class="w-full h-10 text-lg text-gray-900 placeholder:text-gray-400 bg-transparent dark:tex-white focus:ring-0 border-0"
-          placeholder="What's happening?"
+          :placeholder="props.placeholder"
         ></textarea>
       </div>
     </div>
@@ -150,6 +150,11 @@ const props = defineProps({
   user: {
     type: Object,
     required: true,
+  },
+  placeholder: {
+    type: String,
+    default: "What's happening",
+    required: false,
   },
 });
 

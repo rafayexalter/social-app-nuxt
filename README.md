@@ -50,3 +50,6 @@ To play with form data
 
 ### npm i cloudinary
 Make connection with cloudinary to add support of uploading images
+
+### npm i human-time
+Change date time into e.g: 6 hrs ago

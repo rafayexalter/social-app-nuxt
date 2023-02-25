@@ -56,7 +56,7 @@ model Tweet {
   author   User @relation(fields: [authorId], references: [id])
   authorId Int
 
-  replyToId Int?    @default(0)
+  replyToId Int?
   replyTo   Tweet?  @relation("replies", fields: [replyToId], references: [id], onDelete: NoAction, onUpdate: NoAction)
   replies   Tweet[] @relation("replies")
 

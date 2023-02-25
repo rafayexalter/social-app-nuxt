@@ -92,7 +92,7 @@ export default () => {
     const jwt = jwt_decode(authToken.value);
     console.log("Decode: authToken", jwt);
 
-    const newRefreshTime = jwt.exp - 60000;
+    const newRefreshTime = jwt.exp - 600000;
 
     // using async so refreshToken(); reRefreshAccessToken(); both functions don't overlap
     setTimeout(async () => {
